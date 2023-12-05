@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainDG.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <div class="start-screen" id="startScreen">
+        <h1>Welcome to the Dice Game</h1>
+        <button type="button" class="btn" onclick="startGame()">Enter the Game</button>
+    </div>
+
+    <div class="container" id="gameContent">
+        <h1>Let's Play</h1>
+        <h3>Please edit your name before starting the game</h3>
+        <div class="dice-container">
+            <div class="dice" id="player1">
+                <p class="player-name">Player 1</p>
+                <div class="player-line"></div>
+                <img src="dice6.png" alt="dice 6" class="dice-img" id="diceImg1">
+                <p class="score">Score: <span id="score1">0</span></p>
+            </div>
+            <div class="dice" id="player2">
+                <p class="player-name">Player 2</p>
+                <div class="player-line"></div>
+                <img src="dice6.png" alt="dice 6" class="dice-img" id="diceImg2">
+                <p class="score">Score: <span id="score2">0</span></p>
+            </div>
+        </div>
+
+        <div class="container bottom">
+            <button type="button" class="btn" onclick="rollTheDice()">Roll the Dice</button>
+        </div>
+        <div class="container bottom">
+            <button type="button" class="btn" onclick="editNames()">Edit Names</button>
+        </div>
+    </div>
+
+    <script src="mainDG.js"></script>
+</body>
+
+</html>
